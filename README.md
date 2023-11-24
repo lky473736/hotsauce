@@ -5,7 +5,7 @@
 <OpenCV 및 tkinter를 사용하여 얼굴 필터 및 이미지 편집기 구현>*** 
       
 **NAVER LINE사에서 제작한 얼굴인식 필터 및 이미지 편집기인 SNOW에서 아이디어를 착안하여,  
-본 팀은 OpenCV를 활용한 recognition과 filtering, tkinter를 활용한 GUI 개발을 진행할 예정.
+본 팀은 OpenCV를 활용한 recognition과 filtering, tkinter를 활용한 GUI 개발을 진행할 예정.  
 철저한 협업 소프트웨어 공학을 적용하여 단계적으로 version-controlling** 
 
 -------
