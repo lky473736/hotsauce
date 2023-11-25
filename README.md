@@ -22,10 +22,13 @@
   
 -------  
 
-### 2단계 : 얼굴인식 및 필터링 세부 기능 구현 : 유호찬, 임남령 : 2023.11.20. ~ 2023.11.25.  
-참고자료 : https://github.com/lky473736/hotsauce/blob/main/step_2/%EC%B6%9C%EC%B2%98.md
+### 2단계 : 얼굴인식 및 필터링 세부 기능 구현 : 유호찬, 임남령 (face-recognition, mediapipe)  
+
+* 개발 기간 : 2023.11.20. ~ 2023.11.25.  
+참고자료 : https://github.com/lky473736/hotsauce/blob/main/step_2/%EC%B6%9C%EC%B2%98.md  
 
 ------
+
 2.5단계 : 이미지 편집 세부 기능 구현 : 임규연 :   
 3단계 : GUI 윈도우 구현 : 정예지 :  
 4단계 : 최적화 : 임규연 :   
