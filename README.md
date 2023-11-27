@@ -29,7 +29,7 @@
 * 개발 기간 : 2023.11.20. ~ 2023.11.25.  
 참고자료 : https://github.com/lky473736/hotsauce/blob/main/step_2/%EC%B6%9C%EC%B2%98.md  
     
-2) **2.5단계** : 이미지 편집 세부 기능 구현 : 임규연
+2) **2.5단계** : 이미지 편집 세부 기능 구현 : 임규연  
    (https://github.com/lky473736/hotsauce/blob/main/step_2/term_2-5.py)   
 * 개발 기간 : 2023.11.27.    
   
