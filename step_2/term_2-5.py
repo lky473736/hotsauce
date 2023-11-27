@@ -32,7 +32,7 @@ def grayscale () : # 임규연 구현 부분
     
 def change_size () : # 임규연 구현 부분
     '''
-    사이즈 조절 기능을 구현 예시
+    사이즈 조절 기능을 구현 
     '''
     
     size = float(entry1.get()) # 여기서 entry1은 win3에서의 entry입니다.
@@ -45,7 +45,7 @@ def change_size () : # 임규연 구현 부분
     
 def rotate () : # 임규연 구현 부분
     '''
-    이미지 회전 기능을 구현 예시 (name : img.jpg의 global 변수)
+    이미지 회전 기능을 구현 
     '''
     
     angle = float(entry1.get()) # 여기서 entry1은 win3에서의 entry입니다.
@@ -62,7 +62,7 @@ def rotate () : # 임규연 구현 부분
     
 def symmetric () : # 임규연 구현 부분
     '''
-    좌우/상하 대칭 기능을 구현 예정
+    좌우/상하 대칭 기능을 구현 
     양수면 좌우대칭
     음수면 상하대칭
     '''
@@ -81,7 +81,7 @@ def symmetric () : # 임규연 구현 부분
     
 def contour () : # 임규연 구현 부분
     '''
-    이미지 윤곽선 검출 기능을 구현 예정
+    이미지 윤곽선 검출 기능을 구현 
     '''
     
     img_ori = cv2.imread('img.jpg')
@@ -98,7 +98,7 @@ def contour () : # 임규연 구현 부분
     
 def boundaryrect () : # 임규연 구현 부분
     '''
-    객체 윤곽선 사각형 검출 기능을 구현 예정
+    객체 윤곽선 사각형 검출 기능을 구현 
     '''
     
     img_ori = cv2.imread('img.jpg')
