@@ -1,6 +1,11 @@
+#import sys
+#sys.path.append(r'C:\Users\82108\Desktop\closeSW')
+
 import cv2
 import mediapipe as mp
 from tkinter import * 
+
+from library.showTK import getImage, get_button, get_entry
 
 # win1 : 필터 선택
 # win2 : 웹캠
@@ -43,12 +48,12 @@ def change_size () : # 임규연 구현 부분
     cv2.imshow(f'img_dst = {size}', img_dst)
     
     
-def rotate () : # 임규연 구현 부분
+def rotate (angle) : # 임규연 구현 부분
     '''
     이미지 회전 기능을 구현 
     '''
     
-    angle = float(entry1.get()) # 여기서 entry1은 win3에서의 entry입니다.
+    #angle = float(entry1.get()) # 여기서 entry1은 win3에서의 entry입니다.
     
     img_ori = cv2.imread('img.jpg')
     
@@ -125,14 +130,33 @@ def exit() :
     
 def win3() : 
     window2 = Tk()
-    
+    window2.configure(bg="white")
+    window2.title("Image Editor")
+
+    l3 = Label(window2, text="사진 편집기") 
+    l3.pack()
+
     # 건의1) 여기에 img.jpg를 tkinter GUI에서 볼 수 있으면 좋겠습니다. 
+    getImage(window2)
+
     # 건의 2) 여기에 argument를 넣을 수 있는 entry와 버튼을 만들어주시면 됩니다.
     # 버튼의 갯수 == 편집 기능의 갯수
     # 편집 기능 : 흑백, 사이즈 조절, 회전, 대칭, 윤곽선 검출, 객체 검출
+    get_button(window2)
     
-    l3 = Label(window2, text = "GUI 구현 부탁드립니다.")
-    l3.pack()
+    #load_button = Button(window2, text="내 이미지 불러오기", width=15, height=2) #이미지를 불러오는 버튼 생성
+    #load_button.pack()
+
+    frame = Frame(window2)
+
+    get_button(frame)  #버튼 프레임을 불러옵니다.
+    getImage(frame) #이미지를 보여준다.
+
+    frame.pack()
+
+    window2.mainloop()
+
+win3() #윈도우 실행
     
 ################################################
 
