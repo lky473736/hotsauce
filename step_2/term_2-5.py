@@ -269,19 +269,19 @@ def win2(filter_name) : # 유호찬, 임남령, 임규연, 정예지 구현 부�
 
 window1 = Tk()
 
-l0 = Label(window1, text = "자신이 원하는 필터를 선택하세요")
+l0 = Label(window1, text = "자신이 원하는 필터를 선택하세요",   bg="lightsalmon", height= 2)
 l0.pack()
 
-bt2 = Button(window1, text="필터 1 : 고양이", command=filter1)
+bt2 = Button(window1, text="필터 1 : 고양이", command=filter1, fg="slateblue", bg="beige")
 bt2.pack()
 
-bt3 = Button(window1, text="필터 2 : 강아지", command=filter2)
+bt3 = Button(window1, text="필터 2 : 강아지", command=filter2, fg="tomato", bg="khaki")
 bt3.pack()
 
-bt4 = Button(window1, text="필터 3 : 돼지", command=filter3)
+bt4 = Button(window1, text="필터 3 : 돼지", command=filter3, fg="slateblue", bg="beige")
 bt4.pack()
 
-bt5 = Button(window1, text="필터 4 : 선글라스", command=filter4)
+bt5 = Button(window1, text="필터 4 : 선글라스", command=filter4, fg="tomato", bg="khaki")
 bt5.pack()
             
 window1.mainloop()
