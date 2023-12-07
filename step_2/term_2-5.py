@@ -124,15 +124,56 @@ def exit() :
 ############################################### 정예지 구현 파트
     
 def win3() : 
-    window2 = Tk()
-    
-    # 건의1) 여기에 img.jpg를 tkinter GUI에서 볼 수 있으면 좋겠습니다. 
-    # 건의 2) 여기에 argument를 넣을 수 있는 entry와 버튼을 만들어주시면 됩니다.
-    # 버튼의 갯수 == 편집 기능의 갯수
-    # 편집 기능 : 흑백, 사이즈 조절, 회전, 대칭, 윤곽선 검출, 객체 검출
-    
-    l3 = Label(window2, text = "GUI 구현 부탁드립니다.")
+    window2 = Tk()   
+    window2.configure(bg="lightsalmon")
+
+    ######### window3의 타이틀
+    l3 = Label(window2, text = "<사진 편집 윈도우>",  bg="lightsalmon", height= 3)
     l3.pack()
+
+    ########### 값을 받는 엔트리 프레임
+    value_f = Frame(window2) 
+
+    entry_l = Label(value_f, text="값을 입력하세요 : ",  bg="lightsalmon")
+    entry = Entry(value_f, fg="beige" ,bg="lightsalmon", width=10) #사용자에게 값을 입력받는 엔트리 생성
+
+    entry_l.pack(side=LEFT)
+    entry.pack(side=LEFT)
+
+    value_f.pack()
+
+
+    ########### 현재 나의 이미지 표시
+    your_img = PhotoImage(file=r"C:\Users\82108\Desktop\closeSW\SoHot\step_2\pig.png") #임시로 사진 주소 설정하였습니다. 전역객체로 변경해주세요.
+    show_img= Label(window2, image=your_img)
+    show_img.pack()
+
+    ############ 버튼
+    f_button = Frame(window2) 
+
+    # 버튼 공통 속성 설정
+    button_width = 15
+    button_height = 2
+
+
+    grayscale_button = Button(f_button, text="흑백", width=button_width, height=button_height, command=grayscale, fg="slateblue", bg="beige")
+    size_button = Button(f_button, text="사이즈 변경", width=button_width, height=button_height, command=change_size, fg="mintcream", bg="hotpink")
+    rotate_button = Button(f_button, text="이미지 회전", width=button_width, height=button_height, command=rotate,fg="slateblue", bg="beige")
+    symmetric_button = Button(f_button, text="좌우/상하 대칭", width=button_width, height=button_height, command=symmetric, fg="mintcream", bg="hotpink")
+    contour_button = Button(f_button, text="이미지 윤곽선", width=button_width, height=button_height, command=contour,fg="slateblue", bg="beige")
+    boundaryrect_button = Button(f_button, text="객체 윤곽선", width=button_width, height=button_height, command=boundaryrect,fg="mintcream", bg="hotpink")
+    
+    grayscale_button.pack()
+    size_button.pack()
+    rotate_button.pack()
+    symmetric_button.pack()
+    contour_button.pack()
+    boundaryrect_button.pack()
+
+    f_button.pack(side="left") # 프레임을 윈도우에 팩
+
+    window2.mainloop()
+
     
 ################################################
 
