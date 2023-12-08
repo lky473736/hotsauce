@@ -1,3 +1,6 @@
+### 얼굴 인식 출처
+유호찬, 임남령
+
 얼굴 특징점 인식
 https://nadocoding.tistory.com/91
 
