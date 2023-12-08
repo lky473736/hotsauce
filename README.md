@@ -31,8 +31,6 @@
 
 --------
 
-<details><summary>프로그램 구현 과정</summary>
-
 ### 1단계 : 프로젝트 기획 및 시안 작성 (pseudo-code, guideline)
       
 1) **1단계** : pseudo-code 작성 : 임규연 : 2023.11.20.   
@@ -67,11 +65,10 @@
 
 ### 4단계 : 버그 픽스 및 최적화, 리팩터링 및 최종 프로그램 완성 : 임규연 (Bug fixing, Refactoring, Completion the project)  
 * 개발 기간 : 2023.12.08 ~ 2023.12.09.  
+  
   버그 픽스 내용 :  
   * GUI에 부모 창을 따로 설정하지 않아 PhotoImage의 작동 오류 발생 (다른 창에 이미지 보여지는 오류 & 아예 이미지가 보이지 않는 오류)
       -> open 함수 및 상대 경로 설정하여 해결
   * 전체적인 리펙토링 (주석 작성 및 indentation 수정)
   * 필터별 오버레이 길이의 증감값 argument 및 이목구비의 detection 좌푯값 알고리즘 수정 (효과적으로 안면인식을 할 수 있도록)
   * repository를 배포 형태로 수정
-  
-</details>
