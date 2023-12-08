@@ -156,7 +156,7 @@ def win3() : # 정예지 구현, 임규연 수정 및 버그 픽스
     value_f.pack()
 
     ########### 현재 나의 이미지 표시 (버그 픽스 완료)
-    image = Image.open('cinamoroll.jpg')
+    image = Image.open('img.jpg')
     image = image.resize((int(image.width / 4), int(image.height / 4)))  # 이미지 크기를 0.25배로 줄임 (원본 이미지 너무 커서)
     img = ImageTk.PhotoImage(image)
     label = Label(window2, image=img)  # window2를 부모 창으로 사용하여 Label 생성
