@@ -38,7 +38,7 @@
 
 --------
 
-### 1단계 : 프로젝트 기획 및 시안 작성 (pseudo-code, guideline)
+### 1단계 : 프로젝트 기획 및 시안 작성 : 임규연 (pseudo-code, guideline)
       
 1) **1단계** : pseudo-code 작성 : 임규연 : 2023.11.20.   
 전체 code의 흐름 파악을 위한 pseudo-code 작성
